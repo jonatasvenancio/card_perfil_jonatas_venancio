@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e9e2ec;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212830;
+}
+
+.card{
+    height: 500px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 13px;
+}
+
+.card, .profile-img, .fab, .contato-email{
+    box-shadow: -2px -2px 5px #1a1a2e, 2px 2px 5px #000;
+}
+
+.profile-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 16px 0;
+}
+
+.work{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about{
+    margin: 16px 0;
+    font-size: 16px;
+    padding: 0 48px;
+    text-align: center;
+}
+
+.social-icons{
+    margin: 16px;
+}
+
+.fab{
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.img{
+    height: 140px;
+    width: 140px;
+    background-image: url(/images/jonatas_venancio.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.contato-email{
+    background: none;
+    border: none;
+    padding: 11px;
+    border-radius: 13px;
+    margin-top: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.fab:hover, .contato-email{
+    box-shadow: inset -2px -2px #1a1a2e inset 2px 2px 5px #000;
+    cursor: pointer;
+}
